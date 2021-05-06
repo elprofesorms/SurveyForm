@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=New+Tegomin&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="master-container">
+    <form class="survey-form" action="index.html" method="post">
+      <h1>Registration For Date Partner</h1>
+      <p class="note-section"><strong>Note:</strong> All Information you will fill will not be confidential.</p>
+      <fieldset class="details">
+        <legend>Personal Details</legend>
+        <div class="namhai">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" required id="name" name="user_name" placeholder="Enter name here">
+        </div>
+        <div class="addresshai">
+          <label id="address" for="address">Address:</label>
+          <input type="text" name="address" placeholder="Enter Address Here">
+        </div>
+        <div class="emailhai">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" name="email" placeholder="Enter Email-Id Here">
+        </div>
+        <div class="phonehai">
+          <label id="phone-label" for="phone-number">Phone Number:</label>
+          <input type="number" name="phone" placeholder="Enter 10 digit number">
+        </div>
+        <div class="iqhai">
+          <label id="iq-label" for="iq">IQ:</label>
+          <input type="number" name="iq" placeholder="Enter your IQ here">
+        </div>
+        <div>
+          <label id="gender" for="gender">Gender</label>
+          <p>
+            <input type="radio" name="gender" value="male" checked>Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="others">Others<br>
+          </p>
+          <label for="date-label">Date of Birth:</label>
+          <input type="date" name="date">
+          </div>
+      </fieldset>
+
+      <fieldset class="checkboxhai">
+          <label for="checking">Check All That Apply</label><br>
+          <p class="aja">
+            <input id="a1" type="checkbox" name="tattoos">I have tattoos<br>
+            <input id="a2" type="checkbox" name="relationship">I am Married<br>
+            <input id="a3" type="checkbox" name="children">I have children<br>
+            <input id="a4" type="checkbox" name="widow">I am widow<br>
+            <input id="a5" type="checkbox" name="work">I work full-time<br>
+            <input id="a6" type="checkbox" name="firt-timer">I have no girlfriend earlier<br>
+          </p>
+
+      </fieldset>
+
+      <fieldset class="dropdown">
+        <div>
+          <label class="political" for="polytical">Political Persuasion:</label>
+          <select class="dropdown">
+            <option value="right">Right Wing</option>
+            <option value="left">Left Wing</option>
+            <option value="conservative">Conservative</option>
+            <option value="nazi">Nazi</option>
+          </select>
+
+          <label class="education" for="education">Education Level Completed:</label>
+          <select id="dropdown">
+            <option value="pgraduate">Post Graduate</option>
+            <option value="graduate">Graduate</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="highschool">High School</option>
+            <option value="nota">NOTA</option>
+          </select>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="essay">
+        <legend>Essay</legend>
+
+        <div>
+          <label id="msg" for="msg"><p>Define yourself in maximum 100 words</p></label><br>
+          <textarea name="msg" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+        </div>
+
+        <div>
+          <label id="ggf" for="ggf"><p>Define your favorite things</p></label><br>
+          <textarea name="ggf" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+        </div>
+        <div >
+          <label id="mgs" for="mgs"><p>Define which type of date partner you want</p></label><br>
+          <textarea name="mgs" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+        </div>
+        <div>
+          <label id="bank" for="bank"><p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</p></label>
+          <input type="file" name="bank" accept="image/png image/jpeg image/tiff "><br>
+        </div>
+
+        <div class="button">
+          <a class="btn" href="mailto:kamal000rawat,com">Send Your Application</a>
+        </div>
+
+      </fieldset>
+      </form>
+    </div>
+</body>
+
+</html>
